@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&family=Sriracha&display=swap');
+.main {
+    background: url(../image/3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    0% {
+        background-image: url(../image/3.jpg);
+    }
+    45% {
+        background-image: url(../image/1.jpg);
+    }
+    55% {
+        background-image: url(../image/2.jpg);
+    }
+    100% {
+        background-image: url(../image/3.jpg);
+    }
+}
+
+.contentdiv {
+    width: auto;
+    height: 600px;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Sriracha', cursive;
+}
+
+@media screen and (max-width: 800px) {
+    .contentdiv {
+        width: 100%;
+    }
+    /* The width is 100%, when the viewport is 800px or smaller */
+}
