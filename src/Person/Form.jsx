@@ -38,11 +38,11 @@ handleForm=(event)=>{
                         <form onSubmit={this.handleForm}>
                             <h1>Weather App</h1>
                             <p>Find out current Weather in your city</p>
-                            <input type='text' name='city' />
+                            <input type='text' name='city' placeholder='Enter city name'/>
                             <button type='submit' className='btn btn-primary btn-sm'>Search</button>
                             <br />
                             <img src = { 'http://openweathermap.org/img/wn/' + this.state.iconID + '@2x.png' }alt='' />
-                            <h1>Location:{this.state.name} {this.state.countrycode}</h1>
+                            <h1 style={{fontWeight:'bold'}}>{this.state.name} {this.state.countrycode}</h1>
                             <h1>Temperature:{this.state.mainTemp}</h1>
                             <h1>Humidity:{this.state.humidity}</h1>
                             <h1>Description:{this.state.description}</h1>
