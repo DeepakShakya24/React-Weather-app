@@ -1,17 +1,17 @@
-import React from 'react';
-import './App.css';
-import Form from './Person/Form'
-import { useEffect } from 'react';
+import React from "react";
+import "./App.css";
+import Form from "./components/Form";
+import { useEffect } from "react";
 
-const App=()=>{
-  useEffect(()=>{
-    document.title='Weather App'
-  })
-  return(
+const App = () => {
+  useEffect(() => {
+    document.title = "Weather App";
+  });
+  return (
     <div>
-    <Form />
+      <Form />
     </div>
-  )
-}
+  );
+};
 
-  export default App
+export default App;

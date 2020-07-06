@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Piedra&family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Piedra&family=Sriracha&display=swap");
 .main {
     background: url(../image/3.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -29,17 +29,21 @@
 }
 
 .contentdiv {
-    width: auto;
+    width: 100%;
     height: 600px;
-    margin: auto;
     text-align: center;
     justify-content: center;
-    font-family: 'Sriracha', cursive;
+    font-family: "Sriracha", cursive;
 }
 
-@media screen and (max-width: 800px) {
-    .contentdiv {
-        width: 100%;
-    }
-    /* The width is 100%, when the viewport is 800px or smaller */
+#form input {
+    background-color: white;
+    border: 0;
+    width: 200px;
+    height: 30px;
+    padding: 0 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: black;
 }
