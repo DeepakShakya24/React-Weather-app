@@ -1,14 +1,10 @@
 import React from "react";
 import "./App.css";
 import Form from "./components/Form";
-import { useEffect } from "react";
 
 const App = () => {
-  useEffect(() => {
-    document.title = "Weather App";
-  });
   return (
-    <div>
+    <div className="App">
       <Form />
     </div>
   );
