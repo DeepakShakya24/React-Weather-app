@@ -102,7 +102,6 @@ class Form extends Component {
             alt=""
           />
           <h2>{this.state.mainTemp}</h2>
-          <h2>{this.state.description}</h2>
         </div>
       </div>
     );
